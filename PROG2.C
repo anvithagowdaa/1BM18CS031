@@ -7,8 +7,9 @@ struct marks
 void main()
 {
  int credits[5]={2,3,4,5,6};
- int i, total, k;
- float avg;
+ int i, k;
+ int total=0;
+ float sgpa;
  char grade;
  struct marks sub;
  clrscr();
@@ -42,17 +43,16 @@ for(i=0;i<5;i++)
   grade='S';
   k=10; }
  printf("subject %d grade = %c \n",i+1, grade);
-}
+
 
 //calculate sgpa
 
-for(i=0;i<5;i++)
-{
   total+=k*credits[i];
- }
+}
+ 
 
- avg=total/20.0;
+ sgpa=total/20.0;
 
- printf("SGPA = %f", avg);
+ printf("SGPA = %f", sgpa);
  getch();
 }
