@@ -14,6 +14,7 @@ int main()
 	x=pop();
 	if(x!=-9999)
 	printf("popped element is %d \n",x);
+	printf("The new stack is \n");
 	display();
 	return 0;
 }
